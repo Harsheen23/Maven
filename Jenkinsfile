@@ -28,7 +28,7 @@ sh 'java -jar target/MyMavenJenkinsPipeline-1.0-SNAPSHOT.jar'
 }
 stage('Archive') {
 steps {
-archieveArtifacts artifacts 'target/*.war', fingerprint:true
+archiveArtifacts artifacts: 'target/*.war', fingerprint: true
 }
 }
 stage('Deploy') {
