@@ -28,7 +28,7 @@ sh 'java -jar target/MyMaven-1.0-SNAPSHOT.jar'
 }
 stage('Archive') {
 steps {
-archiveArtifacts artifacts: 'target/*.war', fingerprint: true
+archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
 }
 }
 stage('Deploy') {
